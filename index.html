@@ -1,9 +1,22 @@
+<!-- Mobile-Friendly Websites -->
+<!-- K0mputer N3rd -->
+<!-- 02/05/2022 -->
+
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -13,12 +26,18 @@
       crossorigin="anonymous"
     />
 
+    <script
+      src="https://kit.fontawesome.com/00ca827a70.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="Stylesheet" href="./css/style.css" />
+
     <title>Event</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
-         <a class="navbar-brand" href="#">Moqups</a>
+        <a class="navbar-brand brand" href="#">moqups</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -28,53 +47,44 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-         <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-             <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              <a class="nav-link text-dark fw-bold" href="#Speakers"
+                >Speakers</a
               >
-                 <!-- Dropdown  -->
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
             </li>
             <li class="nav-item">
-             <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link text-dark fw-bold" href="#Tickets">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-bold" href="#Venue">Venue</a>
             </li>
           </ul>
-       </div>
-     </div>
+        </div>
+      </div>
     </nav>
 
-    <div class="row text-center">
-      <div class="col p-3 bg-light mb-5">
+    <!-- Jumbotron -->
+
+    <div class="row text-center" id="jumbotron">
+      <div class="col p-3 mb-5">
         <h1 class="display-3 fw-bold">Clear Statement about<br />Your Event</h1>
-        <p class="fs-3">Secondary header providing additional information</p>
+        <p class="fs-3 text-muted">
+          Secondary header providing additional information
+        </p>
         <button class="btn btn-dark btn-lg">GET THE TICKET</button>
       </div>
     </div>
 
-    <div class="row text-center">
+    <!-- Speakers -->
+
+    <div class="row my-5 text-center" id="Speakers">
       <h1 class="display-5 fw-bold">The Speakers</h1>
       <p class="fs-4">
         Write a few lines about the event speakers to
@@ -83,8 +93,8 @@
       </p>
     </div>
 
-    <div class="row">
-      <div class="col">
+    <div class="row mx-4">
+      <div class="col p-5">
         <img src="/img/mountains-bg.png" alt="" class="mw-100 rounded-3" />
         <h3>Ruby Jennings</h3>
         <p class="fs-4">
@@ -92,7 +102,7 @@
         </p>
         <p>@username</p>
       </div>
-      <div class="col">
+      <div class="col p-5">
         <img src="/img/mountains-bg.png" alt="" class="mw-100 rounded-3" />
         <h3>Leon Hanson</h3>
         <p class="fs-4">
@@ -100,7 +110,7 @@
         </p>
         <p>@username</p>
       </div>
-      <div class="col">
+      <div class="col p-5">
         <img src="/img/mountains-bg.png" alt="" class="mw-100 rounded-3" />
         <h3>Meghan Stone</h3>
         <p class="fs-4">
@@ -108,7 +118,7 @@
         </p>
         <p>@username</p>
       </div>
-      <div class="col">
+      <div class="col p-5">
         <img src="/img/mountains-bg.png" alt="" class="mw-100 rounded-3" />
         <h3>Willie Perkins</h3>
         <p class="fs-4">
@@ -117,30 +127,61 @@
         <p>@username</p>
       </div>
     </div>
+    <hr />
 
-    <div class="row">
-    <div class="col">
-    <h3>The Venue</h3>
-    <p>
-     Our event will be held at BitWise Stadium, 700 Van Ness Avenue,
-     Fresno, California.
-     </p>
-      
-    <iframe
-     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399.70120230049355!2d-119.78625511596108!3d36.73193584108015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4340503%3A0xb32dda71cf0730a0!2sBitwise%20South%20Stadium!5e0!3m2!1sen!2sus!4v1643690702198!5m2!1sen!2sus"
-    width="100%"
-     height="300"
-    style="border: 0"
-     allowfullscreen=""
-     loading="lazy"
-     ></iframe>
+    <!-- Tickets -->
+
+    <div class="row text-center my-5" id="Tickets">
+      <div class="col p-3 mb-5 bg-light">
+        <h1 class="display-3 fw-bold">Get Your Ticket Today!</h1>
+        <p class="fs-3 text-muted">
+          Each ticket includes: <strong>20</strong> speakers,
+          <strong>1000</strong> participants, <strong>15</strong> sessions,
+          <strong>5</strong> keynotes.
+        </p>
+        <button class="btn btn-dark btn-lg">BUY TICKET $149</button>
+      </div>
     </div>
-     <div class="col">
-    <img src="/img/mountains-bg.png" alt="" class="mw-100 rounded-3" />
-     </div>
+
+    <hr />
+
+    <!-- Venue -->
+
+    <div class="row m-5" id="Venue">
+      <div class="col p-3">
+        <h3>The Venue</h3>
+        <p>
+          Our event will be held at
+          <strong>Stadium, 700 Van Ness Avenue, Fresno, California.</strong>
+        </p>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399.70120230049355!2d-119.78625511596108!3d36.73193584108015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4340503%3A0xb32dda71cf0730a0!2sBitwise%20South%20Stadium!5e0!3m2!1sen!2sus!4v1643690702198!5m2!1sen!2sus"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="col p-3">
+        <img src="/img/mountains-bg.png" alt="" class="mw-100 rounded-3" />
+      </div>
     </div>
-      
-      
+
+    <!-- Footer -->
+
+    <footer class="display-6 mx-5 mt-5 mb-2 bg-light">
+      <i class="fab fa-twitter px-4">
+      </i>
+      <i class="fab fa-instagram px-4">
+      </i>
+      <i class="fab fa-facebook-square px-4">
+      </i>
+      <span class= "display-5 pt-1 fs-3 text-secondary text-dark float-end"> &copy 2019 Moqups
+      </span>
+    </footer>
+
     <!-- javaScript needs to be at the end, not the beginning. -->
 
     <!-- Optional JavaScript; choose one of the two! -->
